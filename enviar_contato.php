@@ -5,7 +5,7 @@ if(isset($_POST['submit'])) {
     
     // Define o assunto do e-mail
     $subject = "Novo contato enviado pelo site";
-    
+    echo "Mensagem enviada com sucesso!";
     // Captura os dados do formulário
     $name = $_POST['name'];
     $email = $_POST['email'];
