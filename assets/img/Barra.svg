@@ -1,0 +1,16 @@
+<svg width="16" height="620" viewBox="0 0 16 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Barra">
+<rect id="Barra I" x="6" width="4" height="620" fill="url(#paint0_linear_915_388)"/>
+<circle id="Ellipse 1" cx="8" cy="28" r="8" fill="#06152E"/>
+<circle id="Ellipse 2" cx="8" cy="163" r="8" fill="#06152E"/>
+<circle id="Ellipse 3" cx="8" cy="276" r="8" fill="#06152E"/>
+<circle id="Ellipse 4" cx="8" cy="388" r="8" fill="#06152E"/>
+<circle id="Ellipse 5" cx="8" cy="512" r="8" fill="#06152E"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_915_388" x1="8" y1="0" x2="8" y2="620" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C9FE3C"/>
+<stop offset="1" stop-color="#C9FE3C" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
