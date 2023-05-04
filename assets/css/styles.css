@@ -451,7 +451,7 @@ button:hover,
   width: calc(100% - 3rem);
   left: 50%;
   transform: translateX(-50%);
-  background: white;
+  background: var(--first-color);
   margin-top: 1.5rem;
   padding: 1.625rem;
   border-radius: 5px;
@@ -539,7 +539,7 @@ button:hover,
 /*=============== BUTTON ===============*/
 
 
-/*=============== LIST ===============*/
+/*=============== SLIDER ===============*/
 .slider {
   background-color: #d5ff40;
   margin-top: -.0378rem;
@@ -573,7 +573,7 @@ button:hover,
   display: flex;
 }
 
-._images-content {
+.about_images-content {
   width: auto;
   grid-row-gap: 4.5rem;
   flex-direction: column;
@@ -582,27 +582,27 @@ button:hover,
   position: relative;
 }
 	
-._infos-wrapper {
+.about_infos-wrapper {
   grid-column-gap: 4.625rem;
   align-items: flex-start;
   display: flex;
 }
 	
-._clientes-wrap {
+.about_clientes-wrap {
   grid-row-gap: 3px;
   flex-direction: column;
   align-items: center;
   display: flex;
 }
 
-._avalia-es-wrap {
+.about_avalia-es-wrap {
   grid-row-gap: .6875rem;
   flex-direction: column;
   align-items: center;
   display: flex;
 }
 
-._image-robot {
+.about_image-robot {
   width: 100%;
   max-width: 42.875rem;
   margin-bottom: 0;
@@ -610,25 +610,25 @@ button:hover,
   box-shadow: 0 4px 29px rgba(0, 0, 0, .25);
 }
 	
-._clientes-number {
+.about_clientes-number {
   width: 11.1875rem;
 }
 
-._clientes-pics {
+.about_clientes-pics {
   width: 7.625rem;
   max-width: 100%;
 }
 	
-._avalia-es-stars {
+.about_avalia-es-stars {
   width: 7.625rem;
   max-width: 100%;
 }
 
-._avalia-es-number {
+.about_avalia-es-number {
   width: 11.1875rem;
 }
 
-._image-light {
+.about_image-light {
   z-index: -1;
   width: 61.125rem;
   max-width: none;
@@ -644,7 +644,7 @@ button:hover,
   display: flex;
 }
 
-._text-content {
+.about_text-content {
   max-width: 27rem;
 }
 	
@@ -659,9 +659,9 @@ button:hover,
 /*=============== PARA QUEM É ===============*/
 
 
-/*=============== BENEFICIOS ===============*/
-.beneficios {
-  background-image: url("/assets/img/LP_Beneficios.webp");
+/*=============== BENEFITS ===============*/
+.benefits {
+  background-image: url("/assets/img/LP_beneficios.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
@@ -669,70 +669,70 @@ button:hover,
   background-color: #F7F5FD;
 }
 
-.beneficios__title {
+.benefits__title {
   text-align: center;
 }
 
-.beneficios__title h3 {
+.benefits__title h3 {
   font-size: 2rem;
   font-weight: 700;
 }
 
-.beneficios__title p {
+.benefits__title p {
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-.beneficios__text h3 {
+.benefits__text h3 {
   font-size: 1.125rem;
   
   font-weight: 700;
 }
 
-.beneficios__text p {
+.benefits__text p {
   font-size: 1rem;
   font-weight: 400;
 }
 
-.beneficios__barra {
+.benefits__barra {
   max-height: 620px;
   width: 16px;
 }
 
-/*=============== FEATURES ===============*/
-.feature {
+/*=============== SERVICES ===============*/
+.service {
   background-color: #f3f4f6;
   text-align: center;
 }
 
-.feature__intro {
+.service__intro {
   margin-bottom: 5rem;
   text-align: center;
 }
 
-.feature__intro h2 {
+.service__intro h2 {
   font-size: 2.875rem;
   font-weight: 700;
 }
 
-.feature__intro p {
+.service__intro p {
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-.feature__item {
+.service__item {
   padding: 1.875rem;
 }
 
-.feature__item:not(:last-child) {
+.service__item:not(:last-child) {
   margin-right: 21px;
 }
 
-.feature__icon {
+.service__icon {
   margin-bottom: 1.25rem;
 }
 
-.feature__title {
+.service__title {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.15;
@@ -740,7 +740,7 @@ button:hover,
   margin-bottom: 1.25rem;
 }
 
-.feature__description {
+.service__description {
   font-size: 1rem;
   line-height: 1.35;
   font-weight: 400;
@@ -795,51 +795,270 @@ button:hover,
   width: 100%;
 }
 
-/*=============== PRICING ===============*/
-form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
+/*=============== FORM ===============*/
+.form_content {
+  grid-column-gap: 5rem;
+  align-items: center;
+  display: flex;
 }
 
-.form-group {
+.form__image {
+  width: auto;
+  grid-row-gap: 4.5rem;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.form__component {
+  grid-column-gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+form {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  background-color: #F7F5FD;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form__header {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.form__header h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.form__header h3::after {
+  content: '';
+  display: block;
+  width: 7rem;
+  height: 0.3rem;
+  background-color: var(--second-color);
+  margin-top: 10px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.form__group {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding: 0;
 }
 
-label {
-  font-weight: bold;
+.form__input {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 10px;
 }
 
-input, select, textarea {
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
+.form__input input,
+.form__input .select,
+.form__input textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px 24px;
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+  box-sizing: border-box;
+}
+
+.form__input input:hover,
+.form__input .select:hover,
+.form__input .select:hover select  {
+  background-color: #eeeeee75;
+}
+
+.form__input:focus-visible,
+.form__input .select:focus-visible  {
+  outline: 1px solid #C9FE3C;
+}
+
+.form__input .select:focus-visible,
+.form__input select:focus-visible {
+  outline: none;
+}
+
+.form__input select {
+  border: none;
+  font-size: 12px;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.form__input .select {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__input .select select option {
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+
+.form__input label,
+.cnpj__title h6,
+.horario__title h6,
+.whats__title h6,
+.mensagem__title h6 {
+  font-size: 14px;
+  font-weight: var(--font-bold);
+  color: #000000c0;
+  margin: 0;
+}
+
+.form__input input::placeholder {
+  color: #000000be;
+}
+
+.cnpj__group,
+.horario__group,
+.whats__group,
+.mensagem__group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.mensagem__group {
+  margin-bottom: 10px;
+}
+
+
+.cnpj__title,
+.horario__title,
+.whats__title,
+.mensagem__title {
+  margin-bottom: 10px;
+}
+
+.cnpj__inputs,
+.horario__inputs,
+.whats__inputs {
+  display: flex;
   margin-bottom: 20px;
 }
 
-input[type="checkbox"], input[type="radio"] {
+.cnpj__inputs .cnpj__input:not(:last-child),
+.horario__inputs .horario__input:not(:last-child),
+.whats__inputs .whats__input:not(:last-child) {
   margin-right: 10px;
 }
 
-button[type="submit"] {
-  background-color: #C9FE3C;
-  color: #06152E;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+.cnpj__input label,
+.horario__input label,
+.whats__input label {
+  font-size: 12px;
+  font-weight: var(--font-bold);
+  color: #000000c0;
 }
 
-button[type="submit"]:hover {
-  background-color: #06152E;
+.form__input textarea {
+  height: 100px;
+  margin: 0;
+} 
+
+.form__button button {
+  width: 100%;
+  border: none;
+  background-color: var(--first-color);
+  padding: 16px 48px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form__button button:hover {
+  box-shadow: 0 4px 25px var(--first-color);
+}
+
+.form__button button a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: var(--font-regular);
   color: #fff;
+}
+
+/*=============== WHATSAPP ===============*/
+.whatsapp .button-whatsapp {
+  position: fixed;
+  transform: all .5s ease;
+  background-color: var(--second-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  border-radius: 50px;
+  border-right: none;
+  bottom: 70px;
+  right: 40px;
+  border: 0;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+}
+
+.whatsapp .button-whatsapp:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-color: var(--second-color);
+  border-radius: 50%;
+  --webkit-animation: pulse-border 1500ms ease-out infinite;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+.whatsapp .button-whatsapp:focus {
+  border: none;
+  outline: none;
+}
+
+.whatsapp .button-whatsapp svg {
+  height: 30px;
+  width: 30px;
+}
+
+.whatsapp .button-whatsapp svg path{
+  fill: var(--first-color);
+}
+
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
 }
 
 /*=============== FOOTER ===============*/
@@ -888,6 +1107,7 @@ button[type="submit"]:hover {
 
 .footer__cta a {
   color: #000;
+  font-weight: var(--font-bold);
 }
 
 .footer__copyright {

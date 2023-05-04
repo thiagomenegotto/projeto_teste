@@ -5,16 +5,16 @@ html {
 }
 
 @media (min-width: 640px) {
-  .feature {
+  .service {
     text-align: left;
   }
 
-  .feature__grid {
+  .service__grid {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .feature__item {
+  .service__item {
     flex: 0 0 50%;
   }
 
@@ -109,11 +109,11 @@ html {
     text-align: left;
   }
 
-  .feature__intro {
+  .service__intro {
     width: 100%;
   }
 
-  .feature__item {
+  .service__item {
     flex: 1;
   }
 
@@ -209,16 +209,16 @@ html {
     align-items: center;
   }
 
-  ._images-content {
+  .about_images-content {
     width: 100%;
     align-items: center;
     left: auto;
   }
-  ._infos-wrapper {
+  .about_infos-wrapper {
     justify-content: center;
   }
 
-  ._text-content {
+  .about_text-content {
     width: 100%;
     max-width: none;
     flex-direction: column;
@@ -267,7 +267,7 @@ html {
   .slider.overflow-hidden {
     margin-top: -3.3rem;
   }
-  ._images-content {
+  .about_images-content {
     grid-row-gap: 2rem;
   }
 }
